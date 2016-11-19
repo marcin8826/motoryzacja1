@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang=”pl”>
+<!DOCTYPE html>
+<html lang="pl">
 <head>
 		<title>Strona główna</title>
 
@@ -46,6 +46,57 @@ h3
 		height: 2.5%;
 		font-size: 0.9em;
 		}
+
+#polaroids {} ul.polaroids 
+		{
+    display: block;
+		}
+	
+ul.polaroids li 
+		{
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+		}
+	
+ul.polaroids a 
+		{
+    background: #ffffff;
+    display: inline;
+    float: left;
+    margin: 27px 0 27px 30px;
+    width: auto;
+    padding: 10px 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+    -webkit-transform: rotate(-2deg);
+    -webkit-transition: -webkit-transform .15s linear;
+    -moz-transform: rotate(-2deg);
+		}
+	
+ul.polaroids img {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+		}
+	
+ul.polaroids a:after 
+		{
+    content: attr(title);
+		}
+	
+ul.polaroids li a:hover 
+		{
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+    position: relative;
+    z-index: 5;
+		}
 	
 		</style>
 
@@ -64,15 +115,15 @@ h3
 				</div>
 			</header>
 
-			<div id="nav" style="background: #eeeeee">
-				<ul class="nav nav-pills" style="font-size: 95%; margin-left: 25%; margin-right: 25%; background: #eeeeee;">
+			<nav class="navbar navbar-default">
+				<ul class="nav navbar-nav" style="font-size: 95%; margin-left: 25%; margin-right: 25%;">
 					<li role="presentation" class="active"><a href="index.html">Strona Główna</a></li>
 					<li role="presentation"><a href="podstrona_druga.html">Podstrona druga</a></li>
 					<li role="presentation"><a href="#">Podstrona trzecia</a></li>
 					<li role="presentation"><a href="#">Podstrona czwarta</a></li>
 					<li role="presentation"><a href="#">Podstrona piąta</a></li>
 				</ul>
-			</div>
+			</nav>
 
 		<section>
 			<div class="container-fluid">
@@ -83,7 +134,7 @@ h3
 
 
 				<div class="col-lg-9">
-					<h1 style="text-align:center">Fabryka Samochodów Osobowych</h1>
+					<h2 style="text-align:center">Fabryka Samochodów Osobowych</h2>
 						<p>FSO – polskie przedsiębiorstwo przemysłu motoryzacyjnego produkujące samochody osobowe zlokalizowane w Warszawie w dzielnicy Praga-Północ na Pelcowiźnie zbudowane od podstaw na przełomie lat 40. i 50. XX wieku. W latach 1986-2002 w skład FSO wchodził Zakład Samochodów Dostawczych w Nysie.</p>
 						<p>Fabryka Samochodów Osobowych Spółka Akcyjna jest przedsiębiorstwem z 60-letnią tradycją. Firma została założona 1 sierpnia 1948 jako Przedsiębiorstwo Państwowe FSO, którego zadaniem było uruchomienie i prowadzenie fabryki samochodów w Warszawie. Start linii produkcyjnej miał miejsce 6 listopada 1951.</p>
 						<p>Na skutek likwidacji Przedsiębiorstwa Państwowego została utworzona w lutym 1995 roku jednoosobowa spółka Skarbu Państwa FSO Motor, do której niespełna miesiąc później przystąpił udziałowiec zagraniczny. W marcu zmieniono nazwę firmy na Daewoo-FSO Motor Sp. z o.o., a październiku 1999 spółka została przekształcona w akcyjną. W grudniu 2003 roku główni akcjonariusze Spółki Daewoo Motor Co. i Skarb Państwa podjęli decyzję o konwersji swoich wierzytelności na kapitał Spółki. Daewoo Motor Co. zrezygnowało z prawa głosu swoich akcji, co oznacza, że wszystkie akcje należące do Daewoo były akcjami niemymi. Zdecydowano, również że koreański właściciel wycofa się z zarządzania Spółką.</p>
@@ -91,8 +142,73 @@ h3
 					</div>
 				</div>
 			</div>
+	
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-9">
+						<h2 style="text-align: center;">Historia</h2>
+							<p>Rząd Polski po zakończeniu II wojny światowej zdecydował o odbudowie polskiego przemysłu motoryzacyjnego, którego początki sięgają roku 1918. Kluczowym problemem rządu była licencja na produkcję pojazdu. W związku z przedwojenną współpracą polskiego przemysłu motoryzacyjnego z FIAT-em wybrano go do podjęcia negocjacji licencyjnych. Po zakończonych negocjacjach Państwowa Komisja Planowania Gospodarczego podpisała 31 lipca 1948 roku umowę na budowę fabryki motoryzacyjnej w Warszawie i zakup licencji na model Fiat 1400. Warunki porozumienia przewidywały osiągnięcie w ciągu trzech lat produkcji rocznej na poziomie 20 tysięcy pojazdów, przy czym transakcja miała charakter barterowy – umowa przewidywała zapłatę polskim węglem[1]. W sierpniu 1948 roku rozpoczęto budowę fabryki.
+Niestety w 1949 roku w miarę postępów budowy w związku z sytuacją polityczną nasiliła się zimna wojna, co doprowadziło do zerwania umowy z FIAT-em. Według niektórych główną przyczyną zerwania umowy było wycofanie się strony włoskiej w związku z wejściem planu Marshalla, w ramach którego Włochy miały otrzymać duże ilości bardzo taniego węgla amerykańskiego, z tym że za już dostarczone pojazdy Polska zapłaciła węglem, zgodnie z umową[2].
+Rząd Polski postanowił kontynuować budowę fabryki na warszawskim Żeraniu. Jeszcze w 1949 roku władzom polskim zaproponowano nieodpłatne przekazanie licencji na samochód GAZ-M20 Pobieda. W styczniu 1950 roku podpisano polsko-radziecką umowę licencyjną na produkcję samochodu M-20 Pobieda, w ramach której strona radziecka zagwarantowała pomoc w projektowaniu, budowie, wyposażeniu oraz uruchomieniu produkcji seryjnej. Oficjalną umowę z ZSRR podpisano 22 lipca 1950 roku.
+Budowa zakładów zakończyła się późną jesienią 1951 roku. Koszty ich budowy wynosiły 130 milionów ówczesnych złotych, a odpowiednie jej wyposażenie – 250 milionów.
+6 listopada 1951 roku o godzinie 14:00 z hali montażowej nr 1 zjechał pierwszy samochód osobowy wyprodukowany w powojennej Polsce nazwany Warszawą M-20. Ze względu na opóźnienia we wdrażaniu produkcji w pierwszym samochodzie (jak i początkowo w kolejnych) zamontowano jedynie oznaczenia FSO, zaś właściwego montażu dokonano wcześniej w ZSRR. W fabryce pracowało kilkanaście tysięcy ludzi, dla których posiłki w postaci obiadu i paczki papierosów dowożono z pobliskiego hotelu Bristol. Do końca 1951 roku złożono jedynie 75 sztuk. W 1952 roku rozbudowano fabrykę powiększając ją o kolejne hale montażowe.		</p>
+						<h4 style="text-align: center;">Po 2011 roku</h4>
+							<p>Wśród potencjalnych nowych współpracowników FSO wymieniało się m.in. chiński koncern Chery Automobile, ten jednakże postanowił zbudować fabrykę w Turcji. Do marca 2011 roku zwolnienia otrzymało ponad 1800 osób z załogi FSO, pieniądze na odprawy były pozyskiwane ze sprzedaży gruntów, na których zlokalizowano zakład. Do listopada sprzedano tor jazd próbnych, wyburzono hale odlewni i montowni silników.</p>
+					</div>
+				<div class="col-lg-3" style="margin-top: 10%;">
+					<img src="hist.jpg" alt="hist.jpg" class="img-thumbnail img-responsive"/>
+				</div>
+			</div>
 		</div>
+
 	</section>
+	
+		<div id="polaroids">
+         <ul class="polaroids">
+            <li>
+               <a href="">
+               <img src="p1.jpg" alt="p1" />
+               </a>
+            </li>
+            <li>
+               <a href="">
+               <img src="p2.jpg" alt="p2" />
+               </a>
+            </li>
+            <li>
+               <a href="">
+               <img src="p3.jpg" alt="p3" />
+               </a>
+            </li>
+            <li>
+               <a href="">
+               <img src="p4.jpg" alt="p4" />
+               </a>
+            </li>
+            <li>
+               <a href="">
+               <img src="p5.jpg" alt="p5" />
+               </a>
+            </li>
+            <li>
+               <a href="">
+               <img src="p6.jpg" alt="p6" />
+               </a>
+            </li>
+						<li>
+               <a href="">
+               <img src="p7.jpg" alt="p7" />
+               </a>
+            </li>
+						<li>
+               <a href="">
+               <img src="p8.jpg" alt="p8" />
+               </a>
+            </li>
+         </ul>
+      </div>
+	
+
 	
 	<footer>
 	 <div class="container-fluid" style="background-color: #eeeeee;">
@@ -108,6 +224,7 @@ h3
 	 </div>
 	</footer>
 	
+
 
 	</body>
 </html>
